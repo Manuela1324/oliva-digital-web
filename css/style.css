@@ -601,3 +601,28 @@
   @media (max-width: 520px){
     .diseno-tiles{ grid-template-columns:minmax(0,1fr); }
   }
+
+  /* ===== Packs — cotización personalizada, tiles de texto y cierre ===== */
+  .pack-price.pack-price-quote{ font-size:21px; line-height:1.25; }
+  .pack-featured .pack-price.pack-price-quote{ font-size:23px; }
+  .diseno-num.diseno-num-text{ font-size:28px; line-height:1.15; }
+  .gracias-section{ background:var(--paper); padding:80px 0 88px; text-align:center; }
+  .gracias-text{ font-family:'Instrument Serif', serif; font-size:30px; line-height:1.25; color:var(--ink); margin:0; }
+  @media (max-width: 900px){
+    .gracias-section{ padding:56px 0 64px; }
+    .gracias-text{ font-size:25px; }
+  }
+
+  /* ===== Packs — cifra destacada y aviso de solo estrategia ===== */
+  .pack-highlight{ display:flex; align-items:center; gap:16px; margin:22px 0 0; padding:16px 20px; background:var(--paper); border:1px solid var(--border); border-radius:12px; }
+  .pack-highlight-num{ font-family:'Instrument Serif', serif; font-size:60px; line-height:1; color:var(--ink); flex:none; }
+  .pack-highlight-text{ min-width:0; font-size:12.5px; line-height:1.4; color:var(--ink-soft); }
+  .pack-highlight-text strong{ display:block; font-size:15px; font-weight:700; color:var(--ink); }
+  .pack-chips{ display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 0; }
+  .pack-chip{ font-size:12.5px; font-weight:600; line-height:1.3; padding:7px 12px; border:1px solid var(--border-dark); border-radius:999px; color:var(--ink); }
+  .pack-featured .pack-highlight{ background:var(--black); border-color:var(--black); }
+  .pack-featured .pack-highlight-num, .pack-featured .pack-highlight-text strong{ color:var(--paper); }
+  .pack-featured .pack-highlight-text{ color:rgba(251,250,246,0.78); }
+  .pack-featured .pack-chip{ border-color:var(--black); color:var(--black); }
+  .packs-aside{ max-width:640px; margin:44px auto 0; padding:20px 26px; text-align:center; background:var(--cream); border:1px dashed var(--border-dark); border-radius:14px; }
+  .packs-aside p{ margin:0; font-size:15px; line-height:1.6; color:var(--ink); }
